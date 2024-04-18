@@ -1,0 +1,21 @@
+Description:
+  *How to use up to N SinricPro Switch devices on one ESP module 
+ *                       to control N relays and N flipSwitches for manually control:
+ * - setup N SinricPro switch devices
+ * - setup N relays
+ * - setup N flipSwitches to control relays manually
+ *   (flipSwitch can be a tactile button or a toggle switch and is setup in line #52)
+ * 
+ * - handle request using just one callback to switch relay
+ * - handle flipSwitches to switch relays manually and send event to sinricPro server
+ * 
+ * - SinricPro deviceId and PIN configuration for relays and buttins is done in std::map<String, deviceConfig_t> devices
+ * 
+ * If you encounter any issues:
+ * - check the readme.md at https://github.com/sinricpro/esp8266-esp32-sdk/blob/master/README.md
+ * - ensure all dependent libraries are installed
+ *   - see https://github.com/sinricpro/esp8266-esp32-sdk/blob/master/README.md#arduinoide
+ *   - see https://github.com/sinricpro/esp8266-esp32-sdk/blob/master/README.md#dependencies
+ * - open serial monitor and check whats happening
+ * - check full user documentation at https://sinricpro.github.io/esp8266-esp32-sdk
+ * - visit https://github.com/sinricpro/esp8266-esp32-sdk/issues and check for existing issues or open a new one
